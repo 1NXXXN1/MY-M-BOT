@@ -87,7 +87,7 @@ aria2 = ariaAPI(
 def get_client():
     return qbClient(host="localhost", port=8090)
 
-trackers = check_output(["curl -Ns https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt https://ngosang.github.io/trackerslist/trackers_all_http.txt https://newtrackon.com/api/all | awk '$0'"], shell=True).decode('utf-8')
+trackers = check_output(["curl -Ns https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt https://ngosang.github.io/trackerslist/trackers_all_http.txt https://newtrackon.com/api/all https://raw.githubusercontent.com/hezhijie0327/Trackerslist/main/trackerslist_tracker.txt https://gist.githubusercontent.com/nodirhajiev/a063f5a61df1bc557c5daf9d48b8754d/raw/trackerlist.txt | awk '$0'"], shell=True).decode('utf-8')
 trackerslist = set(trackers.split("\n"))
 trackerslist.remove("")
 trackerslist = "\n\n".join(trackerslist)
