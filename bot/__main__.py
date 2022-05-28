@@ -63,21 +63,16 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("⚡INDEX LINK⚡", "https://unlimxdrive.tk")
+    buttons.buildbutton("⚡REPO⚡", "https://github.com/nodirhajiev/MY-M-BOT")
     buttons.buildbutton("🧲OUR MIRROR GROUP🧲", "https://t.me/nodirdrivebots")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
-<b>Hi, I'm a Mirror Bot which can Mirror all your Torrents, Direct Links & Mega.nz Links to Google Drive!</b>
+<b>Hi, I'm a Mirror Bot which can Mirror all your Links to Google Drive!</b>
 ⚡🔥🔥🔥🔥⚡
-<b>🆘For Any Issues & Ideas Contact My Owners :</b> @nodir_khajiev
+<b>🆘For Any Issues & Ideas Contact My Owners :</b> <a href="https://t.me/nodir_khajiev">Group Link</a>
 ⚡🔥🔥🔥🔥⚡
 <b>🧲Mirror Group to Use :</b> Join <a href="https://t.me/nodirdrivebots">Group Link</a>
-⚡🔥🔥🔥🔥⚡
-<b>♻️GDrive Access Group :</b> Join <a href="https://groups.google.com/g/my_drive_members">Access Link</a>
-⚡🔥🔥🔥🔥⚡
-ℹ️Don't forget to join my GDrive Group to get access files
-🚫DON'T SHARE FILES ON OUTSIDE. SHARE ONLY ON OUR GROUP
 ⚡🔥🔥🔥🔥⚡
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
